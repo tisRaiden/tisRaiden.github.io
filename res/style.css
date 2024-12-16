@@ -1,3 +1,13 @@
+.main-menu {
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* spans the full width */
+  z-index: 100; /* above other content */
+  padding: 10px 0;
+}
+
 #outer-container {
 	max-width: 1200px;
 }
