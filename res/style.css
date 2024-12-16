@@ -3,8 +3,8 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light, visible text */
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -19,18 +19,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   line-height: 1.6;
-}
-
-/* Light Mode Styles */
-body.light-mode {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
 }
 
 /* Header Styles */
@@ -54,7 +42,7 @@ body.dark-mode {
 
 #profile-descr {
   font-size: 1.2rem;
-  color: #777;
+  color: #aaa; /* Slightly lighter text color for description */
 }
 
 #icons {
@@ -75,7 +63,7 @@ body.dark-mode {
 }
 
 .project {
-  border: 1px solid #ddd;
+  border: 1px solid #444; /* Dark border for projects */
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s;
@@ -94,19 +82,16 @@ body.dark-mode {
   padding: 15px;
 }
 
-/* Dark Mode Specific Adjustments */
-body.dark-mode .project {
-  border-color: #444;
+/* Adjustments for dark theme (always dark) */
+body #profile-descr {
+  color: #aaa; /* Ensure description text remains visible */
 }
 
-body.dark-mode #profile-descr {
-  color: #aaa;
+body .project {
+  border-color: #444; /* Border color for projects in dark mode */
 }
 
-/* Dark Mode Toggle Button */
+/* Dark Mode Toggle Button - Removed */
 #dark-mode-toggle {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  cursor: pointer;
+  display: none; /* Hide the dark mode toggle */
 }
