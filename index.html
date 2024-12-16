@@ -151,34 +151,6 @@
       </div>
       <div class="col-md-1"></div>
     </div>
-
-    <div class="toggle-container text-center">
-      <button id="dark-mode-toggle" class="btn btn-secondary">Toggle Dark Mode</button>
-    </div>
   </div>
-
-  <script>
-    const toggleButton = document.getElementById('dark-mode-toggle');
-    const body = document.body;
-
-    // Check for saved theme in localStorage
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      body.classList.add('dark-mode');
-      toggleButton.textContent = 'Switch to Light Mode';
-    }
-
-    toggleButton.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'dark');
-        toggleButton.textContent = 'Switch to Light Mode';
-      } else {
-        localStorage.setItem('theme', 'light');
-        toggleButton.textContent = 'Switch to Dark Mode';
-      }
-    });
-  </script>
 </body>
-
 </html>
