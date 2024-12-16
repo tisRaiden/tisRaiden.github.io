@@ -90,8 +90,3 @@ body #profile-descr {
 body .project {
   border-color: #444; /* Border color for projects in dark mode */
 }
-
-/* Dark Mode Toggle Button - Removed */
-#dark-mode-toggle {
-  display: none; /* Hide the dark mode toggle */
-}
